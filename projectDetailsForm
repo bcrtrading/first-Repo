@@ -1,0 +1,12 @@
+const projectDetailsForm = document.getElementById('project-details-form');
+
+projectDetailsForm.addEventListener('submit', (event) => {
+  event.preventDefault(); // Prevent the form from submitting normally
+  
+  // Get the project details from the form
+  const projectType = document.getElementById('project-type').value;
+  const projectLocation = document.getElementById('project-location').value;
+  const projectTimeline = document.getElementById('project-timeline').value;
+  
+  // Do something with the project details (e.g. trigger the cost estimation process)
+});
