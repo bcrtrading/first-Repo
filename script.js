@@ -21,7 +21,7 @@
   // Add an event listener to the form's submit button
   form.addEventListener('submit', function(event) {
     // Prevent the default form submission behavior
-    ;
+    event.preventDefault();
 
     // Get the values from the input fields
     const projectType = typeInput.value;
