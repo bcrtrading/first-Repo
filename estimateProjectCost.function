@@ -4,13 +4,13 @@ function estimateProjectCost(projectType, projectSize) {
   // Set the cost per square foot based on the project type
   switch (projectType) {
     case 'residential':
-      costPerSquareFoot = 100;
+      costPerSquareFoot = 250;
       break;
     case 'commercial':
-      costPerSquareFoot = 200;
+      costPerSquareFoot = 300;
       break;
     case 'industrial':
-      costPerSquareFoot = 300;
+      costPerSquareFoot = 150;
       break;
     default:
       // If the project type is invalid, return an error message
@@ -23,3 +23,8 @@ function estimateProjectCost(projectType, projectSize) {
   // Return the estimated cost of the project
   return totalCost;
 }
+
+const projectType = 'residential';
+const projectSize = 1000; // square feet
+const estimatedCost = estimateProjectCost(projectType, projectSize);
+console.log(estimatedCost); // should output 250000
